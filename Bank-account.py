@@ -50,13 +50,11 @@ print('   ')
 
 OmarConda.get_balance()
 OmarConda.deposit(30.50)
-OmarConda.get_balance
 
 print('   ')
 
 CarlaLara.get_balance()
 CarlaLara.Widthdrawl(20.75)
-CarlaLara.get_balance
 
 print('   ')
 
@@ -66,5 +64,7 @@ TomuraShigaraki.get_balance()
 print('   ')
 
 OmarConda.print_receipt()
+print('   ')
 CarlaLara.print_receipt()
+print('   ')
 TomuraShigaraki.print_receipt()
