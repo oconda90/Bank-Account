@@ -23,3 +23,14 @@ class Account:
     
     def get_balance(self):
         print(f'Hey There, {self.Name}. Your account balance is ${round(self.Balance,2)} ')
+
+    def add_interest(self):
+        interest = self.Balance * 0.083
+        self.Balance = self.Balance + interest
+    
+    def print_receipt(self):
+        encrypt = '****'
+        print(self.Name)
+        print(f'Account No.: {encrypt + self.AccountNumber[4:9]}')
+        print (f'Routing No.: {self.Route}')
+        print(f'Balance: ${round(self.Balance,2)}')
