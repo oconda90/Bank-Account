@@ -21,4 +21,5 @@ class Account:
             self.Balance =self.Balance - amount
             print(f'Amount Withdrawn ${amount}')
     
-    
+    def get_balance(self):
+        print(f'Hey There, {self.Name}. Your account balance is ${round(self.Balance,2)} ')
