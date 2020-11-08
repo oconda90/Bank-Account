@@ -1,4 +1,4 @@
-class Account:
+class BankAccount:
     def __init__(self, full_name, account_number, routing_number, balance):
         self.Name = full_name
         self.AccountNumber = account_number
@@ -34,3 +34,24 @@ class Account:
         print(f'Account No.: {encrypt + self.AccountNumber[4:9]}')
         print (f'Routing No.: {self.Route}')
         print(f'Balance: ${round(self.Balance,2)}')
+
+OmarConda = BankAccount('Omar Conda','10606026', 32746927, 750.00)
+CarlaLara = BankAccount('Carla Lara', '10211102', 78246723, 900.00)
+TomuraShigaraki = BankAccount('Tomura Shigaraki', '56870349', 27834095, 50.00)
+
+print('Hello to the terminal bank!')
+
+OmarConda.get_balance()
+OmarConda.deposit(30.50)
+OmarConda.get_balance
+CarlaLara.get_balance()
+CarlaLara.Widthdrawl(20.75)
+CarlaLara.get_balance
+TomuraShigaraki.add_interest()
+TomuraShigaraki.get_balance()
+
+print('          ')
+
+OmarConda.print_receipt()
+CarlaLara.print_receipt()
+TomuraShigaraki.print_receipt()
